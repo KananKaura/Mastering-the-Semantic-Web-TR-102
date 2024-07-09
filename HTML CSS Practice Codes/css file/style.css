@@ -2,7 +2,7 @@
     width: 1170px;
     height: auto;
     margin: 0 auto;
-    background-color: black;
+    background-color: blue;
 }
 .topheader {
     width: 100%;
@@ -20,7 +20,7 @@
 }
 .navbar ul li a:hover{
     background-color: black;
-    color: white
+    color: white;
 }
 
 

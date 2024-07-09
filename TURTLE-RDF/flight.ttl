@@ -1,0 +1,54 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://www.example.org> .
+ex:Airline_1
+    rdf:type ex:Airline;
+    ex:name "IndiGo";
+    ex:headquarters "Gurgaon";
+    ex:iataCode "6E" .
+
+ex:Airline_2
+    rdf:type ex:Airline;
+    ex:name "Air India";
+    ex:headquarters "Delhi";
+    ex:iataCode "AI" .
+
+ex:Airline_3
+    rdf:type ex:Airline;
+    ex:name "AIX Connect";
+    ex:headquarters "Bangalore";
+    ex:iataCode "I5" .
+
+ex:Airline_4
+    rdf:type ex:Airline;
+    ex:name "Akasa Air";
+    ex:headquarters "Mumbai";
+    ex:iataCode "QP" .
+
+
+ex:flight_123
+    rdf:type ex:flight;
+    ex:flightNumber "6E 2193";
+    ex:departureAirport ex:ABC;
+    ex:arrivalAirport ex:DEF;
+    ex:departureTime "2024-06-24 T19:30:00"^^xsd:dateTime;
+    ex:arrivalTime "2024-06-24 T20:30:00"^^xsd:dateTime;
+    ex:operatedBy ex:Airline_1 .
+
+ex:ABC
+    rdf:type ex:Airport;
+    ex:name "Shaheed Bhagat Singh International Airport";
+    ex:iataCode "IXC";
+    ex:location "Chandigarh,Punjab" .
+
+ex:DEF
+    rdf:type ex:Airport;
+    ex:name "Indira Gandhi International Airport";
+    ex:iataCode "DEL";
+    ex:location "New Delhi,Delhi" .
+
+
+
+
+
+

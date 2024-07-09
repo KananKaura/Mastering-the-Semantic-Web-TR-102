@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display JSON Data</title>
+    <style>
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Data from API</h1>
+    <div id="name"></div>
+    <div id="age"></div>
+    <div id="city"></div>
+    
+
+    <script>
+        // Replace with your Postman mock server URL
+        const apiUrl = 'https://202f9e8c-50e1-4d1a-8e00-bdaaa37e2a6e.mock.pstmn.io/text';
+
+        // Fetch data from the API endpoint
+        fetch(apiUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Display only the name and age in the HTML
+                document.getElementById('name').innerText = data.name;
+                document.getElementById('age').innerText = data.age;
+                document.getElementById('city').innerText = data.city;
+                
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
+</body>
+</html>
