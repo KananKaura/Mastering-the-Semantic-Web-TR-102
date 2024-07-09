@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            text-align: center;
+            margin: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: calc(100vh - 100px); /* Adjust height for buttons */
+            border: none;
+        }
+        .btn {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .btn {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            const file = params.get('file');
+            if (file) {
+                document.getElementById('pdf-iframe').src = file;
+                document.getElementById('download-link').href = file;
+                document.getElementById('download-link').download = file.split('/').pop();
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="btn">Back to Home</a>
+        <a id="download-link" href="#" download class="btn">Download PDF</a>
+        <iframe id="pdf-iframe" src="" frameborder="0"></iframe>
+    </div>
+</body>
+</html>
