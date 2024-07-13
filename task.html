@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui">
+    <title>Training TR-102 Report</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/940a5afe74.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="https://www.gndec.ac.in/"><img src="GNDEC-logo.png" alt="GNDEC Logo"></a>
+            <h2>Training TR-102 Report</h2>
+            <div class="header-buttons">
+                <button class="home-button" onclick="window.location.href='index.html'">Home</button>
+                <button class="home-button" onclick="window.location.href='diary.html'">Daily Diary</button>
+                <button class="home-button" onclick="window.location.href='task.html'">Tasks</button>
+            </div>
+        </header>
+
+        <section id="home" class="section active hero">
+            <div class="intro">
+                <p>Submitted by: Kanan Kaura</p>
+                <p>Class: D2 CSE C2</p>
+                <p>URN: 2203845 </p>
+                <p>Guru Nanak Dev Engineering College, Gill Park, Ludhiana</p>
+                <p><b>4 Weeks Summer Training</b></p>
+                <p><b>on</b></p>
+                <h1>Mastering the Semantic Web</h1>
+                <nav class="task-navigation">
+                    <a class="nav-button" href="#" onclick="showSection('Task1')">HTML basic concepts</a>
+                    <a class="nav-button" href="#" onclick="showSection('Task2')">Divison Task 1</a>
+                    <a class="nav-button" href="#" onclick="showSection('Task3')">Divison Task 2</a>
+                    <a class="nav-button" href="#" onclick="showSection('Task4')">Fluid Concept</a>
+                    <a class="nav-button" href="#" onclick="showSection('Task5')">Navigation Bar</a>
+                    <a class="nav-button" href="#" onclick="showSection('Task6')">Food Outlet Webpage</a>
+                    <a class="nav-button" href="#" onclick="showSection('Task7')">Travel Destination Webpage</a>
+                    <a class="nav-button" href="#" onclick="showSection('Task8')">JSON sample code</a>
+                    <a class="nav-button" href="#" onclick="showSection('Task9')">XML sample code</a>
+                    <a class="nav-button" href="#" onclick="showSection('Task10')">Turtle File</a>
+                    <a class="nav-button" href="#" onclick="showSection('Task11')">Hospital Management Ontology</a>
+                    <a class="nav-button" href="#" onclick="showSection('Task12')">Fetching data using Postman API</a>
+                </nav>
+            </div>
+        </section>
+        <section id="Task1" class="section">
+            <h1>HTML basic concepts</h1>
+            <div class="pdf-container">
+                <iframe src="./HTML CSS Practice Codes/html code/index.html"></iframe>
+            </div>
+            </section>
+            <section id="Task2" class="section">
+                <h1>Divison Task 1</h1>
+                <div class="pdf-container">
+                    <iframe src="./HTML CSS Practice Codes/html code/task2.html"></iframe>
+                </div>
+        </section>
+        <section id="Task3" class="section">
+            <h1>Divison Task 2</h1>
+            <div class="pdf-container">
+                <iframe src="./HTML CSS Practice Codes/html code/task3.html"></iframe>
+            </div>
+        </section>
+        <section id="Task4" class="section">
+            <h1>Fluid Concept</h1>
+            <div class="pdf-container">
+                <iframe src="./HTML CSS Practice Codes/html code/fluid.html"></iframe>
+            </div>
+        </section>
+        <section id="Task5" class="section">
+        <h1>Navigation Bar</h1>
+        <div class="pdf-container">
+            <iframe src="./HTML CSS Practice Codes/html code/navbar.html"></iframe>
+        </div>
+        </section>
+        <section id="Task6" class="section">
+            <h1>Food Outlet Webpage</h1>
+            <div class="pdf-container">
+                <iframe src="https://kanankaura.github.io/Food-Outlet-webpage/"></iframe>
+            </div>
+        </section>
+        <section id="Task7" class="section">
+            <h1>Travel Destination Webpage</h1>
+            <div class="pdf-container">
+                <iframe src="https://kanankaura.github.io/Travel-Destination-Webpage/"></iframe>
+            </div>
+        </section>
+        <section id="Task8" class="section">
+            <h1>JSON sample code</h1>
+            <div class="pdf-container">
+                <iframe src="./JSON and XML files/sample.json"></iframe>
+            </div>
+        </section>
+        <section id="Task9" class="section">
+            <h1> XML sample code</h1>
+            <div class="pdf-container">
+                <iframe src="./JSON and XML files/data.xml"></iframe>
+               </div>
+        </section>
+        <section id="Task10" class="section">
+            <h1>Turtle File</h1>
+            <div class="pdf-container">
+                <iframe src="./TURTLE-RDF/flight.ttl"></iframe>
+            </div>
+        </section>
+        <section id="Task11" class="section">
+            <h1>Hospital Management Ontology</h1>
+            <div class="pdf-container">
+                <iframe src="./Web Ontology Language/Hospital Management.svg"></iframe>
+            </div>
+        </section>
+        <section id="Task12" class="section">
+            <h1>Fetching data using Postman API</h1>
+            <div class="pdf-container">
+                <iframe src="./JSON (using mock server)/index.html"></iframe>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Connect with me on <a href="https://www.linkedin.com/in/kanan-kaura-979039251/" target="_blank"><i class="fab fa-linkedin"></i></a></p>
+        </footer>
+    </div>
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
+</body>
+</html>

@@ -2,86 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui">
     <title>Training Work Showcase</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/940a5afe74.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div class="header-logo">
-            <img src="GNDEC-logo.png" alt="College Logo" class="logo">
-        </div>
-        <div class="header-title">
-            <h2>Training TR-102 Daily Report</h2>
-        </div>
-    </header>
-    <div class="info-container">
-        <p>Submitted by: Kanan Kaura</p>
-        <p>Class: D2 CSE C2</p>
-        <p>URN: 2203845 </p>
-        <p>Guru Nanak Dev Engineering College, Gill Park, Ludhiana</p>
-        <h3><b>4 Weeks Summer Training</b></h3>
-        <h3><b>on</b></h3>
-        <h1>Mastering the Semantic Web</h1>
+    <div class="container">
+        <header>
+            <a href="https://www.gndec.ac.in/"><img src="GNDEC-logo.png" alt="GNDEC Logo"></a>
+            <h2>Training TR-102 Report</h2>
+            <div class="header-buttons">
+                <buttton class="home-button" onclick="window.location.href='index.html'">Home</button>
+            </div>
+            
+        </header>
+        <section id="home" class="section active">
+            <div class="intro">
+                <p>Submitted by: Kanan Kaura</p>
+                <p>Class: D2 CSE C2</p>
+                <p>URN: 2203845 </p>
+                <p>Guru Nanak Dev Engineering College, Gill Park, Ludhiana</p>
+                <p><b>4 Weeks Summer Training</b></p>
+                <p><b>on</b></p>
+                <h1>Mastering the Semantic Web</h1>
+                <nav class="day-navigation">
+                    <a class="nav-button" href="diary.html" onclick="showSection('diary')">Daily Diary</a>
+                    <a class="nav-button" href="task.html" onclick="showSection('task')">Daily Tasks Performed</a>
+                </nav>
+            </div>
+        </section>
+
+        <footer>
+            <p>Connect with me on <a href="https://www.linkedin.com/in/kanan-kaura-979039251/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></p>
+        </footer>
     </div>
-    <div class="main-container">
-        <nav class="sidebar">
-            <ul>
-                <li><a href="#reports">Daily Reports</a></li>
-                <li><a href="#other-files">Training Work</a></li>
-                <li><a href="#webpage-designs">Webpage Designs</a></li>
-            </ul>
-        </nav>
-        <main>
-            <section id="reports">
-                <h2>Daily Reports</h2>
-                <div class="grid-container">
-                    <div class="grid-item"><a href="https://github.com/KananKaura/Mastering-the-Semantic-Web-TR-102/blob/main/TR-102 Daily Diary/Day-1.pdf" target="_blank">Day 1 Report</a></div>
-                    <div class="grid-item"><a href="https://github.com/KananKaura/Mastering-the-Semantic-Web-TR-102/blob/main/TR-102 Daily Diary/Day-2.pdf" target="_blank">Day 2 Report</a></div>
-                    <div class="grid-item"><a href="https://github.com/KananKaura/Mastering-the-Semantic-Web-TR-102/blob/main/TR-102 Daily Diary/Day-3.pdf" target="_blank">Day 3 Report</a></div>
-                    <div class="grid-item"><a href="https://github.com/KananKaura/Mastering-the-Semantic-Web-TR-102/blob/main/TR-102 Daily Diary/Day-4.pdf" target="_blank">Day 4 Report</a></div>
-                    <div class="grid-item"><a href="https://github.com/KananKaura/Mastering-the-Semantic-Web-TR-102/blob/main/TR-102 Daily Diary/Day-5.pdf" target="_blank">Day 5 Report</a></div>
-                    <div class="grid-item"><a href="https://github.com/KananKaura/Mastering-the-Semantic-Web-TR-102/blob/main/TR-102 Daily Diary/Day-6.pdf" target="_blank">Day 6 Report</a></div>
-                    <div class="grid-item"><a href="https://github.com/KananKaura/Mastering-the-Semantic-Web-TR-102/blob/main/TR-102 Daily Diary/Day-7.pdf" target="_blank">Day 7 Report</a></div>
-                    <div class="grid-item"><a href="https://github.com/KananKaura/Mastering-the-Semantic-Web-TR-102/blob/main/TR-102 Daily Diary/Day-8.pdf" target="_blank">Day 8 Report</a></div>
-                    <div class="grid-item"><a href="https://github.com/KananKaura/Mastering-the-Semantic-Web-TR-102/blob/main/TR-102 Daily Diary/Day-9.pdf" target="_blank">Day 9 Report</a></div>
-                    <div class="grid-item"><a href="https://github.com/KananKaura/Mastering-the-Semantic-Web-TR-102/blob/main/TR-102 Daily Diary/Day-10.pdf" target="_blank">Day 10 Report</a></div>
-                    <div class="grid-item"><a href="view_pdf.html?file=reports/Day-11.pdf" target="_blank">Day 11 Report</a></div>
-                    <div class="grid-item"><a href="view_pdf.html?file=reports/Day-12.pdf" target="_blank">Day 12 Report</a></div>
-                    <div class="grid-item"><a href="view_pdf.html?file=reports/Day-13.pdf" target="_blank">Day 13 Report</a></div>
-                    <div class="grid-item"><a href="view_pdf.html?file=reports/Day-14.pdf" target="_blank">Day 14 Report</a></div>
-                    <div class="grid-item"><a href="view_pdf.html?file=reports/Day-15.pdf" target="_blank">Day 15 Report</a></div>
-                    <div class="grid-item"><a href="view_pdf.html?file=reports/Day-16.pdf" target="_blank">Day 16 Report</a></div>
-                    <div class="grid-item"><a href="view_pdf.html?file=reports/Day-17.pdf" target="_blank">Day 17 Report</a></div>
-                    <div class="grid-item"><a href="view_pdf.html?file=reports/Day-18.pdf" target="_blank">Day 18 Report</a></div>
-                    <div class="grid-item"><a href="view_pdf.html?file=reports/Day-19.pdf" target="_blank">Day 19 Report</a></div>
-                    <div class="grid-item"><a href="https://github.com/KananKaura/Mastering-the-Semantic-Web-TR-102/blob/main/TR-102 Daily Diary/Day-20.pdf" target="_blank">Day 20 Report</a></div>
-                </div>
-            </section>
-            <section id="other-files">
-                <h2>Training Work</h2>
-                <div class="grid-container">
-                    <!-- Add more folders here -->
-                    <div class="grid-item"><a href="https://github.com/KananKaura/Mastering-the-Semantic-Web-TR-102/tree/main/HTML%20CSS%20Practice%20Codes" target="_blank">HTML CSS Practice Codes</a></div>
-                    <div class="grid-item"><a href="https://github.com/KananKaura/Mastering-the-Semantic-Web-TR-102/tree/main/JSON%20(using%20mock%20server)" target="_blank">JSON (using mock server)</a></div>
-                    <div class="grid-item"><a href="https://github.com/KananKaura/Mastering-the-Semantic-Web-TR-102/tree/main/JSON%20and%20XML%20files" target="_blank">JSON and XML files</a></div>
-                    <div class="grid-item"><a href="https://github.com/KananKaura/Mastering-the-Semantic-Web-TR-102/tree/main/TURTLE-RDF" target="_blank">Turtle-RDF</a></div>
-                    <div class="grid-item"><a href="https://github.com/KananKaura/Mastering-the-Semantic-Web-TR-102/tree/main/Web%20Ontology%20Language" target="_blank">Web Ontology Language</a></div>
-                </div>
-            </section>
-            <section id="webpage-designs">
-                <h2>Webpage Designs</h2>
-                <div class="grid-container">
-                    <!-- Add folders here -->
-                    <div class="grid-item"><a href="https://kanankaura.github.io/Food-Outlet-webpage/" target="_blank">Food Outlet Webpage</a></div>
-                    <div class="grid-item"><a href="https://kanankaura.github.io/Travel-Destination-Webpage/" target="_blank">Travel Destination Webpage</a></div>
-                </div>
-            </section>
-        </main>
-    </div>
-    <footer>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/kanan-kaura-979039251/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></p>
-    </footer>
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
 </body>
 </html>

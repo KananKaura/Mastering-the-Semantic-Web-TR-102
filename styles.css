@@ -1,128 +1,167 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
+    background-color: #f9f9f9;
 }
-
-header {
-    background-color: #004080;
-    color: white;
-    padding: 10px 0;
+.container {
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     justify-content: space-between;
+}
+header {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #002147;
+    color: #fff;
+    margin: 0;
 }
-
-.header-title {
-    flex: 1;
-    text-align: center;
-}
-
-.header-logo .logo {
+header img {
     height: 50px;
-    margin-left: 20px;
 }
-
-.header-nav ul {
-    list-style: none;
-    display: flex;
-    margin-right: 20px;
-}
-
-.header-nav ul li {
-    margin: 0 10px;
-}
-
-.header-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.info-container {
+header h2 {
+    margin: 0;
+    font-size: 1.5em;
     text-align: center;
-    background-color: #e0e7ff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.main-container {
+.header-buttons {
     display: flex;
 }
-
-.sidebar {
-    width: 200px;
-    background-color: #cce4ff;
-    padding: 20px;
-    border-right: 1px solid #ccc;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin-bottom: 10px;
-}
-
-.sidebar ul li a {
+.header-buttons .home-button {
+    color: #002147;
     text-decoration: none;
-    color: #004080;
-    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
-
-main {
-    flex: 1;
-    padding: 20px;
+.header-buttons .home-button:hover {
+    background-color: #002147;
+    color: #fff;
 }
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.grid-item {
-    background-color: #e0e7ff;
-    padding: 10px;
-    border-radius: 8px;
+.intro {
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #D1E0F0;
 }
-
-.grid-item a {
+.intro p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+.intro h1 {
+    font-size: 2.5em;
+    margin-top: 10px;
+    color: #002147;
+}
+.day-navigation, .task-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #D1E0F0;
+    padding: 10px 0;
+}
+.day-navigation a, .task-navigation a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #002147;
+    color: #fff;
     text-decoration: none;
-    color: #004080;
-    font-weight: bold;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
+.day-navigation a:hover, .task-navigation a:hover {
+    background-color: white;
+    color: #002147;
+}
+.section {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+}
+.section.active {
+    display: block;
+}
+.pdf-container {
+    width: 100%;
+    height: 500px;
+}
+.pdf-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #004080;
+    background-color: #002147;
     color: white;
-    margin-top: 20px;
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
 }
-
-footer p {
-    margin: 5px 0;
-}
-
 footer a {
     color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
     text-decoration: underline;
+}
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    header, footer {
+        text-align: center;
+    }
+
+    .header-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header-buttons .home-button {
+        width: 100%;
+    }
+
+    .intro p, .intro h1, .intro nav {
+        text-align: center;
+    }
+
+    .nav-button {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .pdf-container, .diary-content {
+        width: 100%;
+        height: auto;
+    }
+
+    iframe {
+        width: 100%;
+        height: 500px; /* Adjust as needed */
+    }
+
+    .diary-navigation, .task-navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
