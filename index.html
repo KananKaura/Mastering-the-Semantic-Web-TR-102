@@ -13,9 +13,8 @@
             <a href="https://www.gndec.ac.in/"><img src="GNDEC-logo.png" alt="GNDEC Logo"></a>
             <h2>Training TR-102 Report</h2>
             <div class="header-buttons">
-                <buttton class="home-button" onclick="window.location.href='index.html'">Home</button>
+                <button class="home-button" onclick="window.location.href='index.html'">Home</button>
             </div>
-            
         </header>
         <section id="home" class="section active">
             <div class="intro">
@@ -27,24 +26,14 @@
                 <p><b>on</b></p>
                 <h1>Mastering the Semantic Web</h1>
                 <nav class="day-navigation">
-                    <a class="nav-button" href="diary.html" onclick="showSection('diary')">Daily Diary</a>
-                    <a class="nav-button" href="task.html" onclick="showSection('task')">Daily Tasks Performed</a>
+                    <a class="nav-button" href="diary.html">Daily Diary</a>
+                    <a class="nav-button" href="task.html">Daily Tasks Performed</a>
                 </nav>
             </div>
         </section>
-
         <footer>
             <p>Connect with me on <a href="https://www.linkedin.com/in/kanan-kaura-979039251/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></p>
         </footer>
     </div>
-    <script>
-        function showSection(id) {
-            const sections = document.querySelectorAll('.section');
-            sections.forEach(section => {
-                section.classList.remove('active');
-            });
-            document.getElementById(id).classList.add('active');
-        }
-    </script>
 </body>
 </html>
