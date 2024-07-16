@@ -48,6 +48,7 @@ header h2 {
 .header-buttons .home-button:hover {
     background-color: #002147;
     color: #fff;
+    border: 1px solid white;
 }
 
 .intro {

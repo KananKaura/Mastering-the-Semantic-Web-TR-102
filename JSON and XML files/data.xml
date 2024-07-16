@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<india>
+    <state>
+        <name>Maharashtra</name>
+        <capital>Mumbai</capital>
+        <population>123144223</population>
+        <area_km2>307713</area_km2>
+        <official_languages>
+            <language>Marathi</language>
+        </official_languages>
+    </state>
+    <state>
+        <name>Tamil Nadu</name>
+        <capital>Chennai</capital>
+        <population>77841267</population>
+        <area_km2>130058</area_km2>
+        <official_languages>
+            <language>Tamil</language>
+        </official_languages>
+    </state>
+    <state>
+        <name>Uttar Pradesh</name>
+        <capital>Lucknow</capital>
+        <population>237882725</population>
+        <area_km2>243286</area_km2>
+        <official_languages>
+            <language>Hindi</language>
+            <language>Urdu</language>
+        </official_languages>
+    </state>
+    <state>
+        <name>West Bengal</name>
+        <capital>Kolkata</capital>
+        <population>99609303</population>
+        <area_km2>88752</area_km2>
+        <official_languages>
+            <language>Bengali</language>
+        </official_languages>
+    </state>
+    <state>
+        <name>Karnataka</name>
+        <capital>Bengaluru</capital>
+        <population>67562686</population>
+        <area_km2>191791</area_km2>
+        <official_languages>
+            <language>Kannada</language>
+        </official_languages>
+    </state>
+    <state>
+        <name>Gujarat</name>
+        <capital>Gandhinagar</capital>
+        <population>63872399</population>
+        <area_km2>196024</area_km2>
+        <official_languages>
+            <language>Gujarati</language>
+        </official_languages>
+    </state>
+</india>

@@ -1,0 +1,49 @@
+{
+    "india": {
+      "states": [
+        {
+          "name": "Maharashtra",
+          "capital": "Mumbai",
+          "population": 123144223,
+          "area_km2": 307713,
+          "official_languages": ["Marathi"]
+        },
+        {
+          "name": "Tamil Nadu",
+          "capital": "Chennai",
+          "population": 77841267,
+          "area_km2": 130058,
+          "official_languages": ["Tamil"]
+        },
+        {
+          "name": "Uttar Pradesh",
+          "capital": "Lucknow",
+          "population": 237882725,
+          "area_km2": 243286,
+          "official_languages": ["Hindi", "Urdu"]
+        },
+        {
+          "name": "West Bengal",
+          "capital": "Kolkata",
+          "population": 99609303,
+          "area_km2": 88752,
+          "official_languages": ["Bengali"]
+        },
+        {
+          "name": "Karnataka",
+          "capital": "Bengaluru",
+          "population": 67562686,
+          "area_km2": 191791,
+          "official_languages": ["Kannada"]
+        },
+        {
+          "name": "Gujarat",
+          "capital": "Gandhinagar",
+          "population": 63872399,
+          "area_km2": 196024,
+          "official_languages": ["Gujarati"]
+        }
+      ]
+    }
+  }
+  
